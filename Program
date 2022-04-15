@@ -31,7 +31,6 @@ namespace Orgia_dei_numeri_Primis
                 {
                     if (element % i == 0)
                     {
-                       
                     }
                     else { Primi_num.Insert(0, element); }
                 }
@@ -39,9 +38,10 @@ namespace Orgia_dei_numeri_Primis
                 {
                     foreach (double qq in Primi_num)
                     {
-                        Div_num.Insert(0, qq);
-
-                    }if (Div_num.Count > 1000) {
+                    Div_num.Insert(0, qq);
+                    }
+                    if (Div_num.Count > 1000) 
+                         {
                             int f;
                             int r = 0;
                             for (f = 0; f < 1000; f++, r++)
